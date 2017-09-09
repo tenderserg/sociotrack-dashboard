@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sociotrack</title>
+	<link rel="icon" href="img/favicon.ico"/>
+	
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link type="text/css" rel="stylesheet" href="css/main.css">
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<header class="header">
+		<div class="wrapper-logo">
+			<a class="logo" href="#home">
+				<img src="img/sociotrack-logo.png" alt="sociotrack-logo">
+			</a>			
+		</div>
+		
+		<button id="show_menu" class="my-hamburger">
+			<span>toggle menu</span>
+		</button>
+
+		<div class="menu-top">
+			<a href="#" class="menu-top__btn has-notify">
+				<div class="menu-top__btn-icon menu-top__btn-icon--notify"></div>
+				<div class="notify-count">2</div>
+			</a>
+			<a href="#" class="menu-top__btn">
+				<div class="menu-top__btn-icon menu-top__btn-icon--search"></div>
+			</a>
+		</div>
+
+	</header>
+
+<div class="wrapper">
+	<main class="main">
+		<div class="container">
+			<div class="tabs">
+				<div class="tabs__content active">
+					<div class="dashboard">
+						<div class="dashboard__heading">
+							<h3>@ABHISEK.DAS</h3>
+							<button data-target="modal-window" class="btn btn--addProfile">+ Add Social Profile</button>
+
+							<!-- menu на фильтрацию  -->
+							<div class="filters-button-group">
+							<button class="btn-filter is-checked" data-filter="*">Last day</button>
+								<button class="btn-filter" data-filter=".group-1">Week</button>
+								<button class="btn-filter" data-filter=".group-2">Month</button>
+							</div><!-- конец menu на фильтрацию  -->
+						</div>
+
+						<div class="row">
+							<div class="row-item group-1">
+								<div class="social-box social-box--fb">
+									<div class="social-box__social-network">
+										<span class="icon-facebook"></span>
+									</div>
+									<p class="social-box__count">1,701</p>
+									<p class="social-box__title-count">Followers</p>
+									<p class="social-box__stats">+4 <span class="icon-arrow"></span></p>
+								</div>
+								<div class="user-box">
+									<img class="user-box__avatar" src="img/1.png" alt="user-box-avatar">
+									<div class="user-box__info">
+										<p class="user-box__social">Facebook</p>
+										<p class="user-box__name">@abhisek.daas</p>
+									</div>
+								</div>
+							</div><!-- /.row-item -->
+
+							<div class="row-item group-2">
+								<div class="social-box social-box--tw">
+									<div class="social-box__social-network">
+										<span class="icon-twitter"></span>
+									</div>
+									<p class="social-box__count">1,566</p>
+									<p class="social-box__title-count">Followers</p>
+									<p class="social-box__stats">-3  <span class="icon-arrow down"></span></p>
+								</div>
+								<div class="user-box">
+									<img class="user-box__avatar" src="img/2.png" alt="user-box-avatar">
+									<div class="user-box__info">
+										<p class="user-box__social">Twitter</p>
+										<p class="user-box__name">@wholetthedasout</p>
+									</div>
+								</div>
+							</div><!-- /.row-item -->
+
+							<div class="row-item group-1">
+								<div class="social-box social-box--inst">
+									<div class="social-box__social-network">
+										<span class="icon-instagram"></span>
+									</div>
+									<p class="social-box__count">1,139</p>
+									<p class="social-box__title-count">Followers</p>
+									<p class="social-box__stats">+11  <span class="icon-arrow"></span></p>
+								</div>
+								<div class="user-box">
+									<img class="user-box__avatar" src="img/3.jpg" alt="user-box-avatar">
+									<div class="user-box__info">
+										<p class="user-box__social">Instagram</p>
+										<p class="user-box__name">@wholetthedasout</p>
+									</div>
+								</div>
+							</div><!-- /.row-item -->
+
+							<div class="row-item group-2">
+								<div class="social-box social-box--in">
+									<div class="social-box__social-network">
+										<span class="icon-linkedIn"></span>
+									</div>
+									<p class="social-box__count">2,016</p>
+									<p class="social-box__title-count">Followers</p>
+									<p class="social-box__stats">+39 <span class="icon-arrow"></span></p>
+								</div>
+								<div class="user-box">
+									<img class="user-box__avatar" src="img/1.png" alt="user-box-avatar">
+									<div class="user-box__info">
+										<p class="user-box__social">LinkedIn</p>
+										<p class="user-box__name">@abhisekd3</p>
+									</div>
+								</div>
+							</div><!-- /.row-item -->
+
+							<div class="row-item group-1">
+								<div class="social-box social-box--yt">
+									<div class="social-box__social-network">
+										<span class="icon-youtube"></span>
+									</div>
+									<p class="social-box__count">3,190</p>
+									<p class="social-box__title-count">SUBSCRIBERS</p>
+									<p class="social-box__stats">+22 <span class="icon-arrow"></span></p>
+								</div>
+								<div class="user-box">
+									<img class="user-box__avatar" src="img/5.jpg" alt="user-box-avatar">
+									<div class="user-box__info">
+										<p class="user-box__social">YouTube</p>
+										<p class="user-box__name">@TheAbhisekD</p>
+									</div>
+								</div>
+							</div><!-- /.row-item -->
+
+							<div class="row-item group-2">
+								<div class="social-box social-box--sn">
+									<div class="social-box__social-network">
+										<span class="icon-Snapchat"><span class="path1"></span><span class="path2"></span></span>
+									</div>
+									<p class="social-box__count">8,754</p>
+									<p class="social-box__title-count">snap score</p>
+									<p class="social-box__stats invisible">+11</p>
+								</div>
+								<div class="user-box">
+									<img class="user-box__avatar" src="img/3.jpg" alt="user-box-avatar">
+									<div class="user-box__info">
+										<p class="user-box__social">Snapchat</p>
+										<p class="user-box__name">@abhisekd</p>
+									</div>
+								</div>
+							</div><!-- /.row-item -->
+
+							<div class="row-item group-1">
+								<div class="social-box social-box--gp">
+									<div class="social-box__social-network">
+										<span class="icon-google-plus"></span>
+									</div>
+									<p class="social-box__count">1,033</p>
+									<p class="social-box__title-count">Followers</p>
+									<p class="social-box__stats invisible">+11</p>
+								</div>
+								<div class="user-box">
+									<img class="user-box__avatar" src="img/3.jpg" alt="user-box-avatar">
+									<div class="user-box__info">
+										<p class="user-box__social">Google+</p>
+										<p class="user-box__name">@+AbhisekDas</p>
+									</div>
+								</div>
+							</div><!-- /.row-item -->
+
+							<div class="row-item group-2">
+								<div class="social-box social-box--vn">
+									<div class="social-box__social-network">
+										<span class="icon-vine"></span>
+									</div>
+									<p class="social-box__count">1,045</p>
+									<p class="social-box__title-count">LOOPS</p>
+									<p class="social-box__stats invisible">+11</p>
+								</div>
+								<div class="user-box">
+									<img class="user-box__avatar" src="img/8.jpg" alt="user-box-avatar">
+									<div class="user-box__info">
+										<p class="user-box__social">Vine+</p>
+										<p class="user-box__name">@1316139228245221376</p>
+									</div>
+								</div>
+							</div><!-- /.row-item -->
+						</div><!-- /.row -->
+					</div>
+				</div>
+
+				<div class="tabs__content">
+					<h3>Tab for Social Feed</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et colore magna aliqua. Ut enim </p>
+				</div>
+
+				<div class="tabs__content">
+					<h3>Tab for Invite Friends</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+					<p>Lorem ipsum dolor sit amet</p>
+				</div>
+
+				<div class="tabs__content">
+					<h3>Tab for Settings</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+				</div>
+
+				<div class="tabs__content">
+					<h3>Tab for Log Out</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+				</div>
+			</div> <!-- /.tabs -->
+		</div> <!-- /.container -->
+	</main>
+
+	<aside id="main-menu" class="sidebar menu animation">
+		<div class="profile">
+			<img class="profile__photo" src="img/Profil-photo.jpg" alt="profile-photo">
+			<div class="profile__info">
+				<p class="profile__name">Abhisek Das</p>
+				<p class="profile__folowers-count">10,968 Followers</p>
+			</div>
+		</div>
+
+		<ul class="tabs__caption">
+			<li class="active"><span class="left-icon left-icon--db"></span><span class="text">Dashboard</span></li>
+			<li><span class="left-icon left-icon--sf"></span><span class="text">Social Feed</span></li>
+			<li><span class="left-icon left-icon--if"></span><span class="text">Invite Friends</span></li>
+			<li><span class="left-icon left-icon--set"></span><span class="text">Settings</span></li>
+			<li><span class="left-icon left-icon--lg"></span><span class="text">Log Out</span></li>
+		</ul>
+	</aside>
+
+	<footer class="footer">
+		<nav class="menu-foter">
+			<ul class="menu-foter__list">
+				<li class="menu-foter__item"><a class="menu-foter__link" href="#about">About</a></li>
+				<li class="menu-foter__item"><a class="menu-foter__link" href="#terms">Terms</a></li>
+				<li class="menu-foter__item"><a class="menu-foter__link" href="#privacy">Privacy</a></li>
+				<li class="menu-foter__item"><a class="menu-foter__link" href="#help">Help</a></li>		
+				<li class="menu-foter__item"><a class="menu-foter__link" href="#report">Report</a></li>	</ul>
+			</nav>		
+	</footer>
+</div> <!--/.wrapper-->
+
+<!-- Modal window -->
+<div id="modal-window" class="md-modal">
+	<div class="md-content">
+		<h3 class="md-content__title">Add Social Profile</h3>
+		<button class="close-btn"></button>
+		<p class="md-content__info">Add new social profile for tracking</p>
+		<form name="form-addProfile" id="send_newProfile">
+			<label for="profile_url">Url</label>
+			<input required id="profile_url" type="url" name="profile-url" placeholder="https://twitter.com/username">
+			<button class="btn btn--md-lookup" type="submit">Lookup</button>
+		</form>	
+	</div>
+</div>	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
