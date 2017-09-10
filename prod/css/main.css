@@ -107,6 +107,9 @@ img {
   transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease; }
   .btn:focus {
     outline: none; }
+  .btn--dropdown {
+    padding: 0 3px;
+    border: none; }
   .btn--addProfile {
     float: right;
     color: #1CAF5E;
@@ -199,9 +202,9 @@ img {
     height: 20px;
     width: 20px; }
     .menu-top__btn-icon--notify {
-      background-image: url(/img/notification-icon.svg); }
+      background-image: url(../img/notification-icon.svg); }
     .menu-top__btn-icon--search {
-      background-image: url(/img/search-icon.svg); }
+      background-image: url(../img/search-icon.svg); }
   .menu-top .notify-count {
     display: none;
     position: absolute;
@@ -453,12 +456,41 @@ img {
     padding-left: 4px;
     vertical-align: top; }
   .profile__name {
+    display: inline-block;
     padding-top: 10px;
     margin-bottom: 7px; }
   .profile__folowers-count {
     font-weight: bold;
     font-size: 12px;
     color: rgba(0, 0, 0, 0.3); }
+
+.dropdown {
+  position: relative;
+  display: inline-block; }
+  .dropdown:hover .dropdown__content {
+    display: block; }
+  .dropdown:hover .btn--dropdown {
+    background-color: #3e8e41; }
+    .dropdown:hover .btn--dropdown .svg path {
+      fill: #fff; }
+  .dropdown__content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 60px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1; }
+    .dropdown__content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      -webkit-transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease; }
+      .dropdown__content a:hover {
+        background-color: #f1f1f1; }
 
 .tabs__caption {
   padding: 0;
@@ -484,15 +516,15 @@ img {
       display: block;
       float: left; }
       .tabs__caption li .left-icon--db {
-        background-image: url(/img/dashboard-icon.svg); }
+        background-image: url(../img/dashboard-icon.svg); }
       .tabs__caption li .left-icon--sf {
-        background-image: url(/img/social-feed-icon.svg); }
+        background-image: url(../img/social-feed-icon.svg); }
       .tabs__caption li .left-icon--if {
-        background-image: url(/img/invite-friends-icon.svg); }
+        background-image: url(../img/invite-friends-icon.svg); }
       .tabs__caption li .left-icon--set {
-        background-image: url(/img/settings-icon.svg); }
+        background-image: url(../img/settings-icon.svg); }
       .tabs__caption li .left-icon--lg {
-        background-image: url(/img/log-out-icon.svg); }
+        background-image: url(../img/log-out-icon.svg); }
     .tabs__caption li .text {
       height: 20px;
       line-height: 20px;
@@ -662,7 +694,7 @@ input:focus:-ms-input-placeholder {
 .close-btn {
   float: right;
   background: 50% / contain no-repeat;
-  background-image: url(/img/close-icon.svg);
+  background-image: url(../img/close-icon.svg);
   height: 12px;
   width: 12px;
   padding: 0;
